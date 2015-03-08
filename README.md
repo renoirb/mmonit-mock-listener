@@ -139,6 +139,9 @@ check process exim4
 
 ```
 Something happened { method: 'POST', ip: '10.10.10.169', type: 'text/xml' }
+```
+Then followed by a big JSON object:
+```javascript
 {
     "$": {
         "id": "7cbd97795c5cb2fc88be411a9b5034e4",
