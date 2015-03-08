@@ -1,0 +1,26 @@
+{
+  "name": "mmonit-mock-listener",
+  "version": "0.0.1",
+  "description": "Log to stdout what monit sends to mmonit",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodejs index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "../mmonit-mock-repo/"
+  },
+  "keywords": [
+    "mmonit",
+    "monit",
+    "mock",
+    "express"
+  ],
+  "author": "Renoir Boulanger <renoir@w3.org>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.12.2",
+    "xml2js": "~0.4.5",
+    "raw-body": "~1.3.3"
+  }
+}
