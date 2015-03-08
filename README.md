@@ -12,9 +12,9 @@ or sponsor the author of Monit by purchasing a license to use [M/Monit](https://
 
 On a VM that has nodejs and npm installed, and this project cloned, do:
 
-  npm install
-  npm start
-  // ... everything will happen in the stdout
+    npm install
+    npm start
+    // ... everything will happen in the stdout
 
 Imagine that the internal IP address of where you run `npm start` is 10.10.10.232.
 
@@ -25,5 +25,11 @@ Now, in your Monit configuration, add the line:
 Reload Monit config
 
     sudo service monit restart
+
+The nodejs runner should show lines similar to
+
+```
+Something happened { method: 'POST', ip: '10.10.10.169', type: 'text/xml' }
+```
 
 Thats’s it.
