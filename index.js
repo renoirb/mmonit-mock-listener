@@ -37,8 +37,8 @@ function prepareBody(body) {
     * Monit sends something like this at 'result';
     * { monit:
     *    { '$':
-    *       { id: '7cbd97795c5cb2fc88be411a9b5034e4',
-    *         incarnation: '1425789152',
+    *       { id: '...',
+    *         incarnation: '...',
     *         version: '5.6' },
     *      server: [ [Object] ],
     *      platform: [ [Object] ],
@@ -50,10 +50,9 @@ function prepareBody(body) {
     //prep.hostname = result.monit.server[0].localhostname;
 
     console.log(prep);
-
   });
 }
 
-app.post('/', postHandler);
+app.post('/collector', postHandler);
 
 app.listen(8080);
